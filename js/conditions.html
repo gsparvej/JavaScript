@@ -33,7 +33,7 @@
 
         <!-- find large between three numbers start HTML -->
 
-    <label for="">Number 1</label><br>
+    <!-- <label for="">Number 1</label><br>
     <input type="number" name="" id="number1"><br>
     <label for="">Number 2</label><br>
     <input type="number" name="" id="number2"><br>
@@ -41,7 +41,7 @@
     <input type="number" id="number3"><br><br>
 
     <input type="text" name="" id="result"><br><br>
-    <input type="button" name="" id="" value="Max Number" onclick="maxNumber()">
+    <input type="button" name="" id="" value="Max Number" onclick="maxNumber()"> -->
 
   <!-- find large between three numbers end HTML -->
 
@@ -78,23 +78,23 @@
 // <!-- find large between three numbers start script -->
 
 
-         function maxNumber() {
-            let number1 = parseInt(document.getElementById("number1").value);
-            let number2 = parseInt(document.getElementById("number2").value);
-            let number3 = parseInt(document.getElementById("number3").value);
+        //  function maxNumber() {
+        //     let number1 = parseInt(document.getElementById("number1").value);
+        //     let number2 = parseInt(document.getElementById("number2").value);
+        //     let number3 = parseInt(document.getElementById("number3").value);
             
-            if (number1 >= number2 && number1>=number3) {
-                document.getElementById('result').value=number1 + ' is a large number';
-            }
+        //     if (number1 >= number2 && number1>=number3) {
+        //         document.getElementById('result').value=number1 + ' is a large number';
+        //     }
 
-            else if(number2>=number1 && number2>= number3){
-                document.getElementById('result').value= number2+ ' is a large number';
-            }
-            else {
-                document.getElementById('result').value=number3 + ' is a large number';
-            }
+        //     else if(number2>=number1 && number2>= number3){
+        //         document.getElementById('result').value= number2+ ' is a large number';
+        //     }
+        //     else {
+        //         document.getElementById('result').value=number3 + ' is a large number';
+        //     }
 
-        }
+        // }
 
         // <!-- find large between three numbers end script -->
 
@@ -169,6 +169,19 @@
         // }
         //  find large num between three end
 
+
+     let input1 = prompt('Enter a number to check Leap year or Not');
+    //  let input2 = prompt('Enter a number to check Leap year or Not');
+        if (input1 /4 ==0){
+                document.write(input1+  'This is a Leap Year');
+        }
+
+        else if(input1/400 ==0 && input1/4 ==0 ){
+            document.write(input1+ ' This is a Leap Year')
+        }
+        else{
+            document.write(input1+ 'This is not a Leap Year');
+        }
 
 
 
