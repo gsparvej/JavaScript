@@ -16,12 +16,12 @@
 
 
 
-    
+
     <!-- body 001 start -->
 
-    <!-- <label for="">Number1</label><br>
+    <!-- <label for="">Number 1</label><br>
     <input type="number" name="" id="number1"><br>
-    <label for="">Number2</label><br>
+    <label for="">Number 2</label><br>
     <input type="number" name="" id="number2"><br><br>
 
     <input type="text" name="" id="result"><br><br>
@@ -30,6 +30,20 @@
     <!-- body 001 end -->
 
 
+
+        <!-- find large between three numbers start HTML -->
+
+    <label for="">Number 1</label><br>
+    <input type="number" name="" id="number1"><br>
+    <label for="">Number 2</label><br>
+    <input type="number" name="" id="number2"><br>
+    <label for="">Number 3</label><br>
+    <input type="number" id="number3"><br><br>
+
+    <input type="text" name="" id="result"><br><br>
+    <input type="button" name="" id="" value="Max Number" onclick="maxNumber()">
+
+  <!-- find large between three numbers end HTML -->
 
 
 
@@ -59,6 +73,30 @@
         // }
         // ****0001 end
 
+
+
+// <!-- find large between three numbers start script -->
+
+
+         function maxNumber() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let number3 = parseInt(document.getElementById("number3").value);
+            
+            if (number1 >= number2 && number1>=number3) {
+                document.getElementById('result').value=number1 + ' is a large number';
+            }
+
+            else if(number2>=number1 && number2>= number3){
+                document.getElementById('result').value= number2+ ' is a large number';
+            }
+            else {
+                document.getElementById('result').value=number3 + ' is a large number';
+            }
+
+        }
+
+        // <!-- find large between three numbers end script -->
 
 
 
@@ -112,23 +150,23 @@
         
          //  find large num between three start
 
-        let input1= parseInt(prompt('Enter 1st number'));
-        let input2= parseInt(prompt('Enter 1st number'));
-        let input3= parseInt(prompt('Enter 1st number'));
+        // let input1= parseInt(prompt('Enter 1st number'));
+        // let input2= parseInt(prompt('Enter 1st number'));
+        // let input3= parseInt(prompt('Enter 1st number'));
 
-        if(input1>=input2 && input1>= input3){
-            document.write(input1+ ' is a large number');
-        }
+        // if(input1>=input2 && input1>= input3){
+        //     document.write(input1+ ' is a large number');
+        // }
 
-            else if(input2>=input1 && input2 >= input3){ 
-                document.write(input2+ ' is a large number');
-            }
+        //     else if(input2>=input1 && input2 >= input3){ 
+        //         document.write(input2+ ' is a large number');
+        //     }
 
        
-        else {
-            document.write(input3+ ' is a large number');
+        // else {
+        //     document.write(input3+ ' is a large number');
 
-        }
+        // }
         //  find large num between three end
 
 
