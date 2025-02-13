@@ -175,7 +175,7 @@
 
      let input1 = prompt('Enter a number to check Leap year or Not');
     
-        if (input1 %4 ==0){
+        if (input1 %4 ==0 && !(input1%100==0)){
                 document.write(input1+  'This is a Leap Year');
         }
 
