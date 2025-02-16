@@ -29,22 +29,41 @@
 
         // }
 
-        let odd= '';
-        let even= '';
-        for(i=1; i<=30; i++){
+        // let odd= '';
+        // let even= '';
+        // for(i=1; i<=30; i++){
 
-            if(i%2==0){
-                even+= i+ ",";
-            }
-            else{
-                odd+=i+ ",";
-            }
+        //     if(i%2==0){
+        //         even+= i+ ",";
+        //     }
+        //     else{
+        //         odd+=i+ ",";
+        //     }
             // document.write(" is Even<br>"+ even+ "<br>");
             // document.write(" is Odd<br>"+ odd+ "<br>");
-        }
-        document.write(" is Even<br>"+ even+ "<br>");
-        document.write(" is Odd<br>"+ odd+ "<br>");
+        // }
+        // document.write(" is Even<br>"+ even+ "<br>");
+        // document.write(" is Odd<br>"+ odd+ "<br>");
 
+
+        let userInput= parseInt(prompt(' Enter a Number to check Prime'));
+        let count= 0;
+
+        for( let i=1; i<=userInput; i++){
+
+            if(userInput % i == 0){
+                count+= 1;
+
+            }
+        
+
+        }
+        if(count==2){
+                document.write(userInput+ ' is Prime Number');
+            }
+            else{
+                document.write(userInput+ ' is not Prime Number');
+            }
     </script>
 </body>
 </html>
