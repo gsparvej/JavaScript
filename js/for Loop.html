@@ -46,24 +46,42 @@
         // document.write(" is Odd<br>"+ odd+ "<br>");
 
 
-        let userInput= parseInt(prompt(' Enter a Number to check Prime'));
-        let count= 0;
 
-        for( let i=1; i<=userInput; i++){
 
-            if(userInput % i == 0){
-                count+= 1;
 
-            }
+
+
+        // let userInput= parseInt(prompt(' Enter a Number to check Prime'));
+        // let count= 0;
+
+        // for( let i=1; i<=userInput; i++){
+
+        //     if(userInput % i == 0){
+        //         count+= 1;
+
+        //     }
         
 
-        }
-        if(count==2){
-                document.write(userInput+ ' is Prime Number');
+        // }
+        // if(count==2){
+        //         document.write(userInput+ ' is Prime Number');
+        //     }
+        //     else{
+        //         document.write(userInput+ ' is not Prime Number');
+        //     }
+
+
+
+            let input =parseInt(prompt(" Factorial check"));
+            let count= 1;
+
+            for(let i=1; i<=input; i++){
+
+                    count*=i;
+
             }
-            else{
-                document.write(userInput+ ' is not Prime Number');
-            }
+            document.write(count);
+            
     </script>
 </body>
 </html>
