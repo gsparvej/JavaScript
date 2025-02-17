@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fibonacci</title>
 </head>
+
 <body>
 
-<script>
-    let n= parseInt(prompt(' Enter limit'));
-    let n1=0;
-    let n2=1;
-    let sum=0;
-    // let result=0;
+    <script>
+        // let n= parseInt(prompt(' Enter limit'));
+        // let n1=0;
+        // let n2=1;
+        // let sum=0;
+        // // let result=0;
 
-    document.write(n1+ " <br>");
-    document.write(n2+ " <br>");
-
-
-    for(let i = 3; i<=n; i++){
-        sum=n1+n2;
-        document.write(sum+ " <br>");
-        // swaping here 
-        n1=n2;
-        n2=sum;
-        // result=;
-        // document.write(result);
-
-    }
-     
+        // document.write(n1+ " <br>");
+        // document.write(n2+ " <br>");
 
 
+        // for(let i = 3; i<=n; i++){
+        //     sum=n1+n2;
+        //     document.write(sum+ " <br>");
+        //     // swaping here 
+        //     n1=n2;
+        //     n2=sum;
+        //     // result=;
+        //     // document.write(result);
 
-</script>
+        // }
 
 
-    
+        let n = parseInt(prompt(' Enter limit'));
+        let n1 = 0;
+        let n2 = 1;
+        let sum = 0;
+        // let result=0;
+
+        document.write(n1 + " <br>");
+        document.write(n2 + " <br>");
+
+
+        for (let i = 3; i <= n; i++) {
+            sum = n1 + n2;
+            document.write(sum + " <br>");
+            // swaping here 
+            n1 = n2;
+            n2 = sum;
+            // result=;
+            // document.write(result);
+
+        }
+
+
+    </script>
+
+
+
 </body>
+
 </html>
