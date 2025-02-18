@@ -8,29 +8,48 @@
 <body>
     
     <script>
-        let names = ['shimanto','Atik','imran','masud','istiaq','reja'];
-        let passwords = ['123', '321','456','764','890','991'];
+        // let names = ['shimanto','Atik','imran','masud','istiaq','reja'];
+        // let passwords = ['123', '321','456','764','890','991'];
 
-        let userName = prompt("Your User Name").toLowerCase();
 
-        for(i=0; i<names.length;i++){
-            if(userName==names[i].toLowerCase()){
-                let index = i;
-                let password = prompt("Your Password");
-                if(password == passwords[index]){
-                    document.write("Welcome, " + names[index]);
-                }
-                else{
-                    document.write("Password Inccorrect");
-                }
 
-                break;
-            }
+        // let userName = prompt("Your User Name").toLowerCase();
 
-            if(i == names.length - 1){
-                document.write("User Name Not Found");
-            }
+        // for(i=0; i<names.length;i++){
+        //     if(userName==names[i].toLowerCase()){
+        //         let index = i;
+        //         let password = prompt("Your Password");
+        //         if(password == passwords[index]){
+        //             document.write("Welcome, " + names[index]);
+        //         }
+        //         else{
+        //             document.write("Password Inccorrect");
+        //         }
+
+        //         break;
+        //     }
+
+        //     if(i == names.length - 1){
+        //         document.write("User Name Not Found");
+        //     }
+        // }
+
+
+
+
+        //another item
+
+        let n= parseInt(prompt('Enter size'));
+        let sum=0;
+        let input1=[];
+        for(i=1; i<=n; i++){
+            let input= parseInt(prompt('Enter number'));
+            sum+=input;
+            input1[i]=input;
+            // let input1=i;
         }
+        document.write(sum+ " ");
+        document.write(i+ ' <br>');
 
         
 
