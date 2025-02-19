@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">Email</label><br>
+    <input type="text" name="" id="email" oninput="emailCheck()"><br>
+    <span id="messageMail"></span><br>
+    <label for="">Password</label><br>
+    <input type="text" name="" id="password" oninput="passwordCheck()"><br>
+    <span id="messagePass"></span><br>
+    <input type="button" name="" id="" value="Check Mail"><br>
+
+    <script>
+        function emailCheck(){
+            let email=document.getElementById('email').value;
+            let pattern1= /^\S+@\S+\.\S+$/;
+            if(pattern1.test(email)){
+                document.getElementById('messageMail').innerHTML="<span style='color:green;'>Email is Valid</span><br>"
+            }
+            else{
+                document.getElementById('messageMail').innerHTML="<span style='color:red;'>Email is Invalid</span><br>"
+            }
+            }
+        
+        function passwordCheck(){
+            let password=document.getElementById('password').value;
+            let pattern2=  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{6,15}$/;;
+            if(pattern2.test(password)){
+                document.getElementById('messagePass').innerHTML="<span style='color:green;'>Password is Strong</span><br>"
+            }
+            else{
+                document.getElementById('messagePass').innerHTML="<span style='color:red;'>Password is  Not Strong</span><br>"
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
