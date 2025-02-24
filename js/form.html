@@ -8,33 +8,63 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container bg-light">
 
-        <form id="myForm">
+        <div class="row">
+          <div class="col-md-2"></div>
+        <div class=" col-md-8">
+          <form action="">
+  
             
-            <label for="">Full name</label><br>
-            <input type="text" name="" id="name"><br>
-            <label for="">Email Address</label><br>
-            <input type="text" name="" id="email"><br>
-            <label for="">Password</label><br>
-            <input type="text" name="" id="password"><br>
-
-            <label for="">Gender</label><br>
-            <input type="radio" name="gender" id="" value="Male">Male <br>
-            <input type="radio" name="gender" id="" value="Female">Female <br>
-            <label for="">DoB</label><br>
-            <input type="date" name="" id="dob"><br>
-            <label for="">Hobby</label><br>
-            <input type="checkbox" name="hobby" value="Gaming">Gaming  <br>
-            <input type="checkbox" name="hobby" id="" value="Coding">Coding  <br>
-
-            <input type="button" name="" id="" value="Submit" onclick="formSubmit()">
-
-
-        </form>
-
-    </div>
-    
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  <input type="email" class="form-control" id="name" placeholder="md. parvej hossen">
+                </div>
+  
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Contact</label>
+                  <input type="text" class="form-control" id="contact" placeholder="+8801739-******">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Remarks</label>
+                  <textarea class="form-control" id="remarks" rows="3"></textarea>
+                </div>
+               <div class="container">
+                <div class="row">
+                  <div class="mb-3 ml-3 col-md-6">
+                    <label for="exampleFormControlInput1" class="form-label">Sex</label><br>
+                    <input type="radio" name="gender" id="" value="Male">Male <br>
+                    <input type="radio" name="gender" id="" value="Female">Female <br>
+                  </div>
+                  <div class="mb-3 col-md-2">
+                    <label for="">Courses</label><br>
+                    <input type="checkbox" name="course" id="" value="NT"> NT <br>
+                    <input type="checkbox" name="course" id="" value="IAD"> IAD <br>
+                    <input type="checkbox" name="course" id="" value="DDD"> DDD <br>
+                    <input type="checkbox" name="course" id="" value="ESAD"> ESAD<br>
+                    <input type="checkbox" name="course" id="" value="JEE"> JEE <br>
+                  </div>
+                 </div>
+               </div>
+  
+                <div class="mb-3">
+                  <select name="" id="location">
+                      <option value="Banani">Banani</option>
+                      <option value="Dhanmondi">Dhanmondi</option>
+                      <option value="Mirpur">Mirpur</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <input type="button" name="" id="" value="Submit" onclick="formSubmit()">
+                  <input type="button" name="" id="" value="Reset">
+                </div>
+                
+          
+          </form>
+      </div>
+      <div class="col-md-2"></div>
+        </div>
+      </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js

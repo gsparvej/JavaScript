@@ -1,33 +1,26 @@
-
-
 function formSubmit(){
-    // event.preventDefault();
 
     let name=document.getElementById('name').value;
-    let email=document.getElementById('email').value;
-    let password=document.getElementById('password').value;
-    let dob=document.getElementById('dob').value;
+    let contact=document.getElementById('contact').value;
+    let remarks=document.getElementById('remarks').value;
     let gender=document.querySelector('input[name="gender"]:checked');
-    let hobby=document.querySelectorAll('input[name="hobby"]:checked');
+    let course=document.querySelectorAll('input[name="course"]:checked');
 
-    let hobbyValue=[];
-    for(let i=0;i<hobby.length;i++){
-        hobbyValue.push(hobby[i].value);
+    let courseValue=[];
+    for(i=0;i<course.length;i++){
+        courseValue.push(course[i].value);
     }
-    
-    
 
+    let location=document.getElementById('location').value;
 
-    let output='Name: '+name+ '<br>'
-    +'Email: '+email+'<br>'
-    +'Password: '+password+'<br>'
-    +'Date Of Birth: '+dob+'<br>'
-    +'Gender: '+gender.value+'<br>'
-    +'Hobby: '+hobbyValue+'<br>'
+    let output=
+    'Name      : '+name+'\n'
+    +'Contact   : '+contact+'\n'
+    +'Remarks   : '+remarks+'\n'
+    +'Sex       : '+gender.value+'\n'
+    +'Courses   : '+courseValue+'\n'
+    +'Location  : '+location+'\n';
 
-    let newWindow=window.open("",'_blank');
-        newWindow.document.write("<pre>" +output + "</pre>");
+    let newWindow=window.open('','_blank');
+    newWindow.document.write("<pre>"+output+"</pre>");
 }
-// let myForm= document.getElementById('myForm');
-// myForm.addEventListener('Submit,formSubmit');
-
